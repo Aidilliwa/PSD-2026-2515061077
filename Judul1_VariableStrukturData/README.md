@@ -10,7 +10,7 @@ Struktur data yang digunakan dalam program ini adalah Double Linked List, di man
 
 ![Source Code 1](https://github.com/Aidilliwa/PSD-2026-2515061077/blob/main/Judul1_VariableStrukturData/Source%20Code%201.png?raw=true)
 
-![Source Code 2]()
+![Source Code 2](https://github.com/Aidilliwa/PSD-2026-2515061077/blob/main/Judul1_VariableStrukturData/Source%20Code%202.png?raw=true)
 
 Baris 1: Membuat class Node (representasi 1 lagu)
 Baris 2: Mendefinisikan konstruktor saat node dibuat
