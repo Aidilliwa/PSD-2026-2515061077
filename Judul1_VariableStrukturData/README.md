@@ -8,7 +8,7 @@ Struktur data yang digunakan dalam program ini adalah Double Linked List, di man
 
 ## Source Code
 
-![Source Code 1]()
+![Source Code 1](https://github.com/Aidilliwa/PSD-2026-2515061077/blob/main/Judul1_VariableStrukturData/Source%20Code%201.png?raw=true)
 
 ![Source Code 2]()
 
