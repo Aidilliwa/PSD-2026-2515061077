@@ -156,9 +156,13 @@ Baris 86: Memanggil fungsi main()
 
 ## Output Program
 
-![Output]()
+![Output](https://github.com/Aidilliwa/PSD-2026-2515061077/blob/main/Judul1_VariableStrukturData/Output.png?raw=true)
 
-Output program menunjukkan proses pembuatan dan penampilan playlist lagu menggunakan struktur Double Linked List. Pengguna memasukkan beberapa judul lagu seperti Viva La Vida, Payphone, Ghost, dan Sunflower, di mana setiap input akan dibuat menjadi node baru dan ditambahkan ke dalam list secara berurutan di bagian akhir. Selama pengguna memilih “y”, program terus menerima input lagu, dan berhenti ketika memilih “n”. Setelah itu, program menampilkan menu pilihan untuk melihat playlist dari awal atau akhir. Pada contoh ini, pengguna memilih opsi 1 sehingga program menampilkan playlist dari awal menggunakan traversal maju (forward), yaitu sesuai urutan input: Viva La Vida | Payphone | Ghost | Sunflower. Terakhir, program menampilkan pesan bahwa playlist selesai ditampilkan dan program berakhir tanpa error, yang menandakan bahwa seluruh proses berjalan dengan baik sesuai studi kasus.
+Output program menunjukkan proses pembuatan dan penampilan playlist lagu menggunakan struktur Double Linked List. Pengguna memasukkan beberapa judul lagu seperti Viva La Vida, Payphone, Ghost, dan Sunflower, di mana setiap input akan dibuat menjadi node baru dan ditambahkan ke dalam list secara berurutan di bagian akhir. 
+
+Selama pengguna memilih “y”, program terus menerima input lagu, dan berhenti ketika memilih “n”. Setelah itu, program menampilkan menu pilihan untuk melihat playlist dari awal atau akhir. Pada contoh ini, pengguna memilih opsi 1 sehingga program menampilkan playlist dari awal menggunakan traversal maju (forward), yaitu sesuai urutan input: Viva La Vida | Payphone | Ghost | Sunflower. 
+
+Terakhir, program menampilkan pesan bahwa playlist selesai ditampilkan dan program berakhir tanpa error, yang menandakan bahwa seluruh proses berjalan dengan baik sesuai studi kasus.
 
 ## Link YouTube
 
