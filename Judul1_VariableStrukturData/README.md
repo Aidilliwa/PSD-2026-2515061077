@@ -8,9 +8,9 @@ Struktur data yang digunakan dalam program ini adalah Double Linked List, di man
 
 ## Source Code
 
-![Source Code 1](https://github.com/Aidilliwa/PSD-2026-2515061077/blob/main/Judul1_VariableStrukturData/Source%20Code%201.png?raw=true)
+![Source Code 1](https://github.com/Aidilliwa/Image/blob/main/Source%20Code%201.png?raw=true)
 
-![Source Code 2](https://github.com/Aidilliwa/PSD-2026-2515061077/blob/main/Judul1_VariableStrukturData/Source%20Code%202.png?raw=true)
+![Source Code 2](https://github.com/Aidilliwa/Image/blob/main/Source%20Code%202.png?raw=true)
 
 Baris 1: Membuat class Node (representasi 1 lagu)
 
@@ -156,7 +156,7 @@ Baris 86: Memanggil fungsi main()
 
 ## Output Program
 
-![Output](https://github.com/Aidilliwa/PSD-2026-2515061077/blob/main/Judul1_VariableStrukturData/Output.png?raw=true)
+![Output](https://github.com/Aidilliwa/Image/blob/main/Output.png?raw=true)
 
 Output program menunjukkan proses pembuatan dan penampilan playlist lagu menggunakan struktur Double Linked List. Pengguna memasukkan beberapa judul lagu seperti Viva La Vida, Payphone, Ghost, dan Sunflower, di mana setiap input akan dibuat menjadi node baru dan ditambahkan ke dalam list secara berurutan di bagian akhir. 
 
