@@ -62,4 +62,4 @@ Setelah itu, algoritma Insertion Sort bekerja dengan membandingkan dan memindahk
 
 ## Link YouTube
 
-
+https://youtu.be/pIjr1QB2Ob4
