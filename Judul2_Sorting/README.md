@@ -56,7 +56,9 @@ Baris 35–36: Menjalankan fungsi main() saat program dieksekusi
 
 <img width="497" height="134" alt="Output" src="https://github.com/user-attachments/assets/5a76386e-5de5-4687-a5f8-0f7330df4374" />
 
-Output program menunjukkan proses pengurutan harga barang menggunakan algoritma Insertion Sort. Pengguna memasukkan jumlah barang sebanyak 5, kemudian memasukkan masing-masing harga yaitu 72000, 64000, 68000, 23000, dan 6500. Program terlebih dahulu menampilkan data sebelum diurutkan dalam bentuk list, yaitu [72000, 64000, 68000, 23000, 6500]. Setelah itu, algoritma Insertion Sort bekerja dengan membandingkan dan memindahkan elemen hingga tersusun secara terurut. Hasil akhirnya ditampilkan dalam urutan ascending, yaitu 6500 23000 64000 68000 72000. Hal ini menunjukkan bahwa program berhasil mengurutkan data dengan benar tanpa error sesuai dengan konsep algoritma yang digunakan.
+Output program menunjukkan proses pengurutan harga barang menggunakan algoritma Insertion Sort. Pengguna memasukkan jumlah barang sebanyak 5, kemudian memasukkan masing-masing harga yaitu 72000, 64000, 68000, 23000, dan 6500. Program terlebih dahulu menampilkan data sebelum diurutkan dalam bentuk list, yaitu [72000, 64000, 68000, 23000, 6500].
+
+Setelah itu, algoritma Insertion Sort bekerja dengan membandingkan dan memindahkan elemen hingga tersusun secara terurut. Hasil akhirnya ditampilkan dalam urutan ascending, yaitu 6500 23000 64000 68000 72000. Hal ini menunjukkan bahwa program berhasil mengurutkan data dengan benar tanpa error sesuai dengan konsep algoritma yang digunakan.
 
 ## Link YouTube
 
