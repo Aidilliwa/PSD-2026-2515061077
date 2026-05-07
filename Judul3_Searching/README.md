@@ -8,6 +8,7 @@ Sequential Search bekerja dengan cara membandingkan data dari elemen pertama sam
 
 ## Source Code
 
+<img width="626" height="719" alt="Source Code" src="https://github.com/user-attachments/assets/5263847d-0888-47b6-a18e-d50f8ce1c9fd" />
 
 
 Baris 1: Mendefinisikan fungsi sequential_search dengan parameter data, jumlah data, dan target pencarian
@@ -64,9 +65,11 @@ Baris 39: Memanggil fungsi main()
 
 ## Output Program
 
+<img width="286" height="62" alt="Output" src="https://github.com/user-attachments/assets/4dba8980-af91-46cf-867d-199c7323d61f" />
 
+Program akan mencari nomor kupon 115 pada daftar data secara berurutan dari awal hingga akhir menggunakan algoritma Sequential Search. 
 
-Program akan mencari nomor kupon 115 pada daftar data secara berurutan dari awal hingga akhir menggunakan algoritma Sequential Search. Karena nomor 115 muncul sebanyak 3 kali di dalam list data, maka program menampilkan hasil bahwa nomor kupon tersebut ditemukan sebanyak 3 kali. Program berjalan dengan baik tanpa error dan berhasil melakukan proses pencarian sesuai studi kasus.
+Karena nomor 115 muncul sebanyak 3 kali di dalam list data, maka program menampilkan hasil bahwa nomor kupon tersebut ditemukan sebanyak 3 kali.
 
 ## Link YouTube
 
