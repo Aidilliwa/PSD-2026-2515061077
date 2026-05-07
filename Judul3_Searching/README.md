@@ -67,9 +67,7 @@ Baris 39: Memanggil fungsi main()
 
 <img width="286" height="62" alt="Output" src="https://github.com/user-attachments/assets/4dba8980-af91-46cf-867d-199c7323d61f" />
 
-Program akan mencari nomor kupon 115 pada daftar data secara berurutan dari awal hingga akhir menggunakan algoritma Sequential Search. 
-
-Karena nomor 115 muncul sebanyak 3 kali di dalam list data, maka program menampilkan hasil bahwa nomor kupon tersebut ditemukan sebanyak 3 kali.
+Program akan mencari nomor kupon 115 pada daftar data secara berurutan dari awal hingga akhir menggunakan algoritma Sequential Search. Karena nomor 115 muncul sebanyak 3 kali di dalam list data, maka program menampilkan hasil bahwa nomor kupon tersebut ditemukan sebanyak 3 kali.
 
 ## Link YouTube
 
