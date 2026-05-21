@@ -18,137 +18,305 @@ Struktur data yang digunakan adalah Binary Search Tree (BST), yaitu struktur dat
 
 <img width="534" height="406" alt="Source Code 5" src="https://github.com/user-attachments/assets/a3be58fb-8923-4942-a4d5-7ff97d46f1a0" />
 
-Baris 1: Membuat class Node sebagai representasi node pada BST
+Baris 1: Mendefinisikan kelas bernama Node.
 
-Baris 2: Membuat constructor __init__
+Baris 2: Membuat konstruktor __init__ yang otomatis berjalan saat objek Node baru dibuat dengan menerima parameter nilai skor (key).
 
-Baris 3: Menyimpan nilai key pada node
+Baris 3: Menyimpan nilai skor input ke dalam variabel objek self.key.
 
-Baris 4: Inisialisasi child kiri dengan None
+Baris 4: Membuat pointer self.left bernilai None untuk menunjuk ke anak sebelah kiri.
 
-Baris 5: Inisialisasi child kanan dengan None
+Baris 5: Membuat pointer self.right bernilai None untuk menunjuk ke anak sebelah kanan.
 
-Baris 8: Membuat class BSTLanjut
+Baris 8: Mendefinisikan kelas utama bernama BSTLanjut.
 
-Baris 9: Constructor class BST
+Baris 9: Membuat fungsi konstruktor objek untuk struktur pohon utama.
 
-Baris 10: Inisialisasi root BST dengan None
+Baris 10: Menginisialisasi akar pohon (self.root) dengan nilai awal None (pohon kosong).
 
-Baris 12: Membuat fungsi insert node
+Baris 12: Membuat fungsi pembantu rekursif insert_node untuk mencari posisi input data baru berdasarkan node saat ini.
 
-Baris 13: Jika root kosong maka membuat node baru
+Baris 13: Memeriksa apakah posisi node saat ini kosong (None).
 
-Baris 15–16: Jika key lebih kecil, masuk ke subtree kiri
+Baris 14: Jika kosong, mengembalikan objek Node baru sebagai tempat penyimpanan skor.
 
-Baris 18–19: Jika key lebih besar, masuk ke subtree kanan
+Baris 16: Memeriksa apakah skor baru lebih kecil dari skor node saat ini.
 
-Baris 21: Mengembalikan root
+Baris 17: Jika lebih kecil, program bergerak ke kiri secara rekursif dan hasilnya dihubungkan ke pointer anak kiri.
 
-Baris 23–24: Fungsi insert untuk memanggil insert_node
+Baris 19: Memeriksa apakah skor baru lebih besar dari skor node saat ini.
 
-Baris 26: Fungsi mencari node terkecil
+Baris 20: Jika lebih besar, program bergerak ke kanan secara rekursif dan hasilnya dihubungkan ke pointer anak kanan.
 
-Baris 27: Menyimpan root sementara ke current
+Baris 22: Mengembalikan posisi node saat ini agar struktur pohon di atasnya tetap terhubung.
 
-Baris 29–30: Bergerak ke child kiri sampai node terkecil ditemukan
+Baris 24: Membuat fungsi publik insert untuk dipanggil dari luar kelas.
 
-Baris 32: Mengembalikan node terkecil
+Baris 25: Menjalankan proses penambahan data dengan memperbarui self.root utama melalui fungsi insert_node.
 
-Baris 34: Fungsi delete node
+Baris 27: Membuat fungsi find_min_node untuk mencari nilai terkecil pada suatu sub-pohon.
 
-Baris 35–36: Jika root kosong, return None
+Baris 28: Menetapkan node awal pencarian ke dalam variabel penanda current.
 
-Baris 38–39: Jika key lebih kecil, cari di subtree kiri
+Baris 30: Melakukan perulangan selama anak kiri dari node saat ini masih tersedia.
 
-Baris 41–42: Jika key lebih besar, cari di subtree kanan
+Baris 31: Menggeser posisi current terus ke arah anak sebelah kiri.
 
-Baris 44: Jika key ditemukan
+Baris 33: Mengembalikan node paling kiri (nilai terkecil) yang berhasil ditemukan.
 
-Baris 45–46: Jika node tidak punya child, hapus node
+Baris 35: Membuat fungsi pembantu rekursif delete_node untuk menghapus skor tertentu.
 
-Baris 48–49: Jika hanya punya child kanan
+Baris 36: Memeriksa apakah node yang diperiksa kosong (None).
 
-Baris 51–52: Jika hanya punya child kiri
+Baris 37: Jika kosong, mengembalikan nilai None karena skor tidak ditemukan.
 
-Baris 54–57: Jika punya dua child, gunakan successor
+Baris 39: Memeriksa apakah skor yang ingin dihapus lebih kecil dari skor node saat ini.
 
-Baris 59: Mengembalikan root
+Baris 40: Jika lebih kecil, program melakukan rekursi mencari data ke arah sub-pohon kiri.
 
-Baris 61–62: Fungsi delete memanggil delete_node
+Baris 42: Memeriksa apakah skor yang ingin dihapus lebih besar dari skor node saat ini.
 
-Baris 64: Fungsi traversal level-order
+Baris 43: Jika lebih besar, program melakukan rekursi mencari data ke arah sub-pohon kanan.
 
-Baris 65–67: Jika BST kosong tampilkan pesan kosong
+Baris 45: Blok alternatif jika skor yang dicari cocok dengan skor node saat ini (data ditemukan).
 
-Baris 69–70: Membuat queue dan memasukkan root
+Baris 46: Memeriksa apakah node target tidak memiliki anak sama sekali (node daun).
 
-Baris 72: Perulangan selama queue tidak kosong
+Baris 47: Jika benar daun, hapus node dengan mengembalikan nilai None.
 
-Baris 73: Mengambil node pertama dari queue
+Baris 49: Memeriksa apakah node target hanya tidak memiliki anak kiri (hanya punya anak kanan).
 
-Baris 75: Menampilkan nilai node
+Baris 50: Menggantikan posisi node saat ini dengan anak kanannya tersebut.
 
-Baris 77–78: Menambahkan child kiri ke queue
+Baris 52: Memeriksa apakah node target hanya tidak memiliki anak kanan (hanya punya anak kiri).
 
-Baris 80–81: Menambahkan child kanan ke queue
+Baris 53: Menggantikan posisi node saat ini dengan anak kirinya tersebut.
 
-Baris 83: Pindah baris
+Baris 55: Blok alternatif jika node yang dihapus memiliki dua anak sekaligus.
 
-Baris 85: Fungsi mencari successor
+Baris 56: Mencari nilai pengganti terdekat menggunakan nilai minimum dari sub-pohon kanan (successor).
 
-Baris 86–87: Inisialisasi current dan successor
+Baris 57: Mengganti nilai skor node saat ini dengan nilai dari node successor.
 
-Baris 89–98: Proses pencarian successor
+Baris 58: Menghapus node successor yang asli di sub-pohon kanan secara rekursif agar tidak ganda.
 
-Baris 100–101: Jika node tidak ditemukan
+Baris 60: Mengembalikan struktur node saat ini yang telah diperbarui.
 
-Baris 103–104: Jika ada subtree kanan, cari nilai terkecil
+Baris 62: Membuat fungsi publik delete untuk menghapus skor dari luar kelas.
 
-Baris 106–107: Jika successor tidak ada
+Baris 63: Memperbarui struktur self.root utama dengan memanggil fungsi delete_node.
 
-Baris 109: Mengembalikan successor
+Baris 65: Membuat fungsi level_order untuk mencetak isi pohon per level secara horizontal.
 
-Baris 111: Fungsi mencari predecessor
+Baris 66: Memeriksa apakah kondisi pohon dalam keadaan kosong.
 
-Baris 112–113: Inisialisasi current dan predecessor
+Baris 67: Jika kosong, mencetak teks "(kosong)" ke layar.
 
-Baris 115–124: Proses pencarian predecessor
+Baris 68: Keluar secara paksa dari fungsi karena tidak ada data yang bisa diproses.
 
-Baris 126–127: Jika node tidak ditemukan
+Baris 70: Membuat list kosong bernama queue untuk digunakan sebagai struktur data antrean.
 
-Baris 129–135: Jika ada subtree kiri, cari nilai terbesar
+Baris 71: Memasukkan node paling atas (root) sebagai elemen pertama di dalam antrean.
 
-Baris 137–138: Jika predecessor tidak ada
+Baris 73: Melakukan perulangan selama antrean queue masih memiliki elemen di dalamnya.
 
-Baris 140: Mengembalikan predecessor
+Baris 74: Mengambil sekaligus menghapus elemen terdepan (indeks 0) dari antrean ke variabel current.
 
-Baris 143: Membuat fungsi utama main()
+Baris 76: Mencetak skor dari node yang diambil ke layar dengan pemisah karakter spasi.
 
-Baris 144: Membuat objek BST
+Baris 78: Memeriksa apakah node saat ini memiliki anak di sebelah kiri.
 
-Baris 145: Inisialisasi variabel pilihan menu
+Baris 79: Jika ada, masukkan anak kiri tersebut ke baris antrean paling belakang.
 
-Baris 147–153: Menampilkan menu program
+Baris 81: Memeriksa apakah node saat ini memiliki anak di sebelah kanan.
 
-Baris 155–159: Input pilihan menu dengan validasi error
+Baris 82: Jika ada, masukkan anak kanan tersebut ke baris antrean paling belakang.
 
-Baris 161–167: Menu menambahkan skor player
+Baris 84: Mencetak baris baru di akhir penelusuran agar tampilan output rapi.
 
-Baris 169–175: Menu menghapus skor player
+Baris 86: Membuat fungsi find_successor untuk mencari nilai terkecil setelah skor target.
 
-Baris 177–178: Menampilkan data level-order
+Baris 87: Menetapkan penanda current mulai berjalan dari posisi root pohon.
 
-Baris 180–192: Mencari successor suatu skor
+Baris 88: Menyiapkan variabel penampung hasil bernama successor dengan nilai awal None.
 
-Baris 194–206: Mencari predecessor suatu skor
+Baris 90: Melakukan perulangan pencarian selama node current tidak bernilai kosong.
 
-Baris 208–209: Menampilkan pesan program selesai
+Baris 91: Memeriksa apakah skor target lebih kecil dari nilai skor node saat ini.
 
-Baris 211: Menampilkan pesan jika pilihan tidak valid
+Baris 92: Jika lebih kecil, node saat ini disimpan sebagai kandidat sementara untuk nilai successor.
 
-Baris 214: Mengecek apakah file dijalankan langsung
+Baris 93: Menggeser pointer current ke sub-pohon kiri untuk mencari nilai yang lebih kecil lagi.
 
-Baris 215: Memanggil fungsi main()
+Baris 95: Memeriksa apakah skor target lebih besar dari nilai skor node saat ini.
+
+Baris 96: Jika lebih besar, langsung menggeser pointer current ke sub-pohon kanan.
+
+Baris 98: Blok alternatif jika skor target sama dengan nilai skor node saat ini (target ketemu).
+
+Baris 99: Menghentikan perulangan penelusuran pohon secara paksa.
+
+Baris 101: Memeriksa apakah setelah loop selesai posisi current berakhir kosong.
+
+Baris 102: Jika kosong (target tidak ada di pohon), mengembalikan nilai None dan status False.
+
+Baris 104: Memeriksa apakah node target yang ditemukan memiliki sub-pohon di sebelah kanan.
+
+Baris 105: Jika ada, nilai successor sejati diambil dari nilai minimum di sub-pohon kanan tersebut.
+
+Baris 107: Memeriksa apakah variabel hasil successor masih tetap bernilai kosong.
+
+Baris 108: Jika tetap kosong, mengembalikan nilai None dan status False (tidak memiliki successor).
+
+Baris 110: Mengembalikan data nilai skor dari successor beserta status keberhasilan True.
+
+Baris 112: Membuat fungsi find_predecessor untuk mencari nilai terbesar sebelum skor target.
+
+Baris 113: Menetapkan penanda current mulai berjalan dari posisi root pohon.
+
+Baris 114: Menyiapkan variabel penampung hasil bernama predecessor dengan nilai awal None.
+
+Baris 116: Melakukan perulangan pencarian selama node current tidak bernilai kosong.
+
+Baris 117: Memeriksa apakah skor target lebih besar dari nilai skor node saat ini.
+
+Baris 118: Jika lebih besar, node saat ini disimpan sebagai kandidat sementara untuk nilai predecessor.
+
+Baris 119: Menggeser pointer current ke sub-pohon kanan untuk mencari nilai yang lebih besar lagi.
+
+Baris 121: Memeriksa apakah skor target lebih kecil dari nilai skor node saat ini.
+
+Baris 122: Jika lebih kecil, langsung menggeser pointer current ke sub-pohon kiri.
+
+Baris 124: Blok alternatif jika skor target sama dengan nilai skor node saat ini.
+
+Baris 125: Menghentikan perulangan penelusuran pohon secara paksa.
+
+Baris 127: Memeriksa apakah setelah loop selesai posisi current berakhir kosong.
+
+Baris 128: Jika kosong (target tidak ada di pohon), mengembalikan nilai None dan status False.
+
+Baris 130: Memeriksa apakah node target yang ditemukan memiliki sub-pohon di sebelah kiri.
+
+Baris 131: Membuat pointer penjelajah sementara bernama temp di posisi anak kiri target.
+
+Baris 133: Melakukan perulangan geser ke kanan selama anak kanan dari temp masih tersedia.
+
+Baris 134: Menggeser posisi pointer temp ke arah anak sebelah kanan.
+
+Baris 136: Menetapkan posisi paling kanan tersebut sebagai objek hasil predecessor yang sejati.
+
+Baris 138: Memeriksa apakah variabel hasil predecessor masih tetap bernilai kosong.
+
+Baris 139: Jika tetap kosong, mengembalikan nilai None dan status False (tidak memiliki predecessor).
+
+Baris 141: Mengembalikan data nilai skor dari predecessor beserta status keberhasilan True.
+
+Baris 144: Mendefinisikan fungsi utama bernama main.
+
+Baris 145: Membuat objek pohon baru bernama bst dari cetakan kelas BSTLanjut.
+
+Baris 146: Membuat variabel pilih dengan nilai awal 0 untuk menampung pilihan menu pengguna.
+
+Baris 148: Melakukan perulangan program selama nilai opsi menu yang dipilih bukan angka 6.
+
+Baris 149 sampai 155: Mencetak daftar teks menu pilihan 1 sampai 6 ke layar terminal komputer.
+
+Baris 157: Membuka blok penanganan kesalahan input menu utama.
+
+Baris 158: Mengambil data input pilihan pengguna dan mengubah formatnya menjadi bilangan bulat (int).
+
+Baris 160: Blok penangkap kesalahan tipe data input jika pengguna memasukkan selain angka asli.
+
+Baris 161: Mencetak teks informasi peringatan bahwa data "Input tidak valid!".
+
+Baris 162: Mengabaikan perintah sisa dan melompat kembali ke awal perulangan menu utama.
+
+Baris 164: Memeriksa apakah pengguna memilih nomor menu 1 (Tambah Skor).
+
+Baris 165: Membuka blok proteksi kesalahan data untuk input penambahan skor.
+
+Baris 166: Meminta pengguna memasukkan nilai skor dalam format bilangan bulat ke variabel x.
+
+Baris 167: Memasukkan nilai skor x ke dalam sistem pohon lewat perintah fungsi bst.insert.
+
+Baris 168: Mencetak pesan konfirmasi bahwa data skor sukses dimasukkan ke dalam sistem.
+
+Baris 169: Menangkap kesalahan input jika pengguna tidak memasukkan angka bulat yang benar.
+
+Baris 170: Mencetak pemberitahuan peringatan bahwa input tidak valid.
+
+Baris 173: Memeriksa apakah pengguna memilih nomor menu 2 (Hapus Skor).
+
+Baris 174: Membuka blok proteksi kesalahan data untuk input penghapusan skor.
+
+Baris 175: Meminta pengguna memasukkan nilai skor yang akan dihapus dari sistem ke variabel x.
+
+Baris 176: Menghapus data skor x di dalam pohon menggunakan perintah fungsi bst.delete.
+
+Baris 177: Mencetak pesan konfirmasi sukses bahwa data skor telah dibersihkan dari sistem.
+
+Baris 178: Menangkap kesalahan input jika data yang dimasukkan salah tipe.
+
+Baris 179: Mencetak pemberitahuan peringatan kesalahan input ke layar.
+
+Baris 182: Memeriksa apakah pengguna memilih nomor menu 3 (Tampilkan Data).
+
+Baris 183: Mencetak awalan teks keterangan format cetak data skor.
+
+Baris 184: Memanggil fungsi bst.level_order untuk mencetak seluruh isi pohon terstruktur ke layar.
+
+Baris 186: Memeriksa apakah pengguna memilih nomor menu 4 (Cari Skor Setelahnya).
+
+Baris 187: Membuka blok proteksi kesalahan data untuk menu pencarian successor.
+
+Baris 188: Meminta input skor target pencarian successor dari pengguna ke variabel x.
+
+Baris 189: Menjalankan fungsi bst.find_successor dan hasilnya diurai ke variabel ans dan found.
+
+Baris 191: Memeriksa apakah status variabel status found bernilai sukses (True).
+
+Baris 192: Jika sukses, mencetak hasil nilai skor successor yang dicari ke layar.
+
+Baris 194: Blok alternatif jika data status bernilai gagal atau tidak ditemukan.
+
+Baris 195: Mencetak informasi teks bahwa target "Tidak ada successor".
+
+Baris 197: Menangkap kesalahan input jika pengguna menginputkan nilai non-angka.
+
+Baris 198: Mencetak pemberitahuan peringatan kesalahan input ke layar.
+
+Baris 200: Memeriksa apakah pengguna memilih nomor menu 5 (Cari Skor Sebelumnya).
+
+Baris 201: Membuka blok proteksi kesalahan data untuk menu pencarian predecessor.
+
+Baris 202: Meminta input skor target pencarian predecessor dari pengguna ke variabel x.
+
+Baris 203: Menjalankan fungsi bst.find_predecessor dan hasilnya diurai ke variabel ans dan found.
+
+Baris 205: Memeriksa apakah status variabel status found bernilai sukses (True).
+
+Baris 206: Jika sukses, mencetak hasil nilai skor predecessor yang dicari ke layar.
+
+Baris 208: Blok alternatif jika data status bernilai gagal atau tidak ditemukan.
+
+Baris 209: Mencetak informasi teks bahwa target "Tidak ada predecessor".
+
+Baris 211: Menangkap kesalahan input tipe data pada menu pencarian.
+
+Baris 212: Mencetak pemberitahuan peringatan kesalahan input ke layar.
+
+Baris 214: Memeriksa apakah pengguna memilih nomor menu 6 (Keluar Program).
+
+Baris 215: Mencetak pesan penutup bahwa operasional aplikasi selesai dijalankan.
+
+Baris 217: Blok akhir jika input menu berupa angka di luar jangkauan pilihan yang tersedia (1-6).
+
+Baris 218: Mencetak pesan peringatan "Pilihan tidak valid!".
+
+Baris 221: Memeriksa apakah file script Python ini sedang dijalankan secara langsung sebagai program utama.
+
+Baris 222: Memanggil fungsi main() untuk mulai mengaktifkan seluruh siklus program.
 
 ## Output Program
 
