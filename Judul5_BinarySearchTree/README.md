@@ -320,8 +320,12 @@ Baris 222: Memanggil fungsi main() untuk mulai mengaktifkan seluruh siklus progr
 
 ## Output Program
 
+<img width="401" height="655" alt="Output 1" src="https://github.com/user-attachments/assets/33aecd6a-8d27-4168-94f4-af0451624388" />
 
+<img width="425" height="787" alt="Output 2" src="https://github.com/user-attachments/assets/b3834787-4343-4a39-9226-d58621716c40" />
+
+Program diawali dengan menambahkan beberapa skor player yaitu 75, 80, 85, dan 90 ke dalam Binary Search Tree menggunakan menu tambah skor player. Data dimasukkan sesuai aturan BST, di mana nilai yang lebih kecil ditempatkan di sebelah kiri dan nilai yang lebih besar ditempatkan di sebelah kanan node. Setelah itu, pengguna menghapus skor 80 menggunakan menu hapus skor player sehingga node dengan nilai 80 berhasil dihapus dari pohon. Saat menu tampilkan data skor dipilih, program menampilkan traversal level-order dengan hasil 75 85 90, yang menunjukkan susunan node BST setelah penghapusan data. Selanjutnya, program mencari successor dari nilai 85 dan menghasilkan nilai 90 karena merupakan nilai terkecil yang lebih besar dari 85. Kemudian program mencari predecessor dari nilai 85 dan menghasilkan nilai 75 karena merupakan nilai terbesar yang lebih kecil dari 85. Terakhir, pengguna memilih menu keluar dan program selesai dijalankan tanpa error, sehingga membuktikan bahwa operasi insert, delete, traversal, successor, dan predecessor pada Binary Search Tree berjalan dengan baik.
 
 ## Link YouTube
 
-
+https://youtu.be/bDaiN2OxcDE
