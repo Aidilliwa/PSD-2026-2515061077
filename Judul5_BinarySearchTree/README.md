@@ -1,4 +1,4 @@
-<img width="597" height="916" alt="Source Code 2" src="https://github.com/user-attachments/assets/1a301322-582e-4a8a-bcb7-275ae18f6ce6" /># Manajemen Data Skor Player Menggunakan Binary Search Tree (BST)
+# Manajemen Data Skor Player Menggunakan Binary Search Tree (BST)
 
 Program ini untuk mengelola data skor player pada sebuah game menggunakan struktur data Binary Search Tree (BST). Pengguna dapat menambahkan skor player, menghapus skor, menampilkan data skor secara level-order, serta mencari skor setelahnya (successor) dan skor sebelumnya (predecessor).
 
