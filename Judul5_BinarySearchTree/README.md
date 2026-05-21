@@ -320,9 +320,12 @@ Baris 222: Memanggil fungsi main() untuk mulai mengaktifkan seluruh siklus progr
 
 ## Output Program
 
+
 <img width="401" height="655" alt="Output 1" src="https://github.com/user-attachments/assets/33aecd6a-8d27-4168-94f4-af0451624388" />
 
+
 <img width="425" height="787" alt="Output 2" src="https://github.com/user-attachments/assets/b3834787-4343-4a39-9226-d58621716c40" />
+
 
 Program dimulai dengan menambahkan skor player 75, 80, 85, dan 90 ke dalam Binary Search Tree sesuai aturan BST. Setelah itu, skor 80 dihapus sehingga data yang tersisa adalah 75, 85, dan 90. Saat menu tampilkan data dipilih, program menampilkan traversal level-order yaitu 75 85 90. Program juga berhasil mencari successor dari 85 yaitu 90, serta predecessor dari 85 yaitu 75. Terakhir, program ditutup melalui menu keluar tanpa error, sehingga seluruh fitur BST berjalan dengan baik.
 
