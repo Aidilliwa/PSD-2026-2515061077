@@ -1,6 +1,6 @@
 # Sistem Parkir Kendaraan Menggunakan Hash Map Separate Chaining
 
-Program ini digunakan untuk mengelola data kendaraan yang masuk ke area parkir menggunakan struktur data Hash Map. Setiap kendaraan memiliki nomor tiket sebagai key dan plat nomor sebagai value. Program dapat menambahkan, mencari, dan menghapus data kendaraan berdasarkan nomor tiket.
+Program ini dibuat untuk mengelola data kendaraan yang masuk ke area parkir menggunakan struktur data Hash Map. Setiap kendaraan memiliki nomor tiket sebagai key dan plat nomor sebagai value. Program dapat menambahkan, mencari, dan menghapus data kendaraan berdasarkan nomor tiket.
 
 Struktur data yang diterapkan adalah Hash Map dengan metode Separate Chaining, yang memungkinkan penyimpanan dan pencarian data dilakukan secara cepat. Jika terjadi collision, data disimpan menggunakan linked list pada bucket yang sama sehingga tetap dapat diakses dengan baik.
 
